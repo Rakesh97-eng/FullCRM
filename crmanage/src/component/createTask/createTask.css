@@ -1,0 +1,23 @@
+.taskform{
+    margin: 5%;
+    background-color: beige;
+    padding: 5%;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.form>input{
+    width: 20%;
+    align-self: center ;
+}
+.form>select{
+    width: 20%;
+    align-self: center ;
+}

@@ -1,0 +1,7 @@
+.taskheader{
+    background-color: rgb(167, 167, 231);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 0  1% 0 ;
+}
