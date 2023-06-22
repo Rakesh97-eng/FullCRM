@@ -7,7 +7,7 @@ import dotenv from 'dotenv'
 
 const app =express();
 app.use(express.json());
-app.use(dotenv.config())
+dotenv.config();
 app.use(cors())
 app.use('/',task);
 app.use('/auth',auth)
