@@ -4,7 +4,7 @@ import { login,authenticate, getallstore, getTask, updateTask } from "../tasksli
 export const UserLogin = async (url, method, dispatch, data) => {
   let logindata = await axios({
     method: method,
-    url: `http://localhost:5050/auth/${url}`,
+    url: `https://full-crm-two.vercel.app//auth/${url}`,
     data: data,
   });
   //  dispatch(login(logindata.data));
@@ -15,7 +15,7 @@ export const UserLogin = async (url, method, dispatch, data) => {
 export const UserRegister = async (url, method, dispatch, data) => {
   let logindata = await axios({
     method: method,
-    url: `http://localhost:5050/auth/${url}`,
+    url: `https://full-crm-two.vercel.app//auth/${url}`,
     data: data,
   });
   //  dispatch(login(logindata.data));
@@ -25,20 +25,20 @@ export const UserRegister = async (url, method, dispatch, data) => {
 
 export const GetallUsers = async(url,method,dispatch)=>{
   let Allusers = await axios({
-    method:method,url: `http://localhost:5050/auth/${url}`
+    method:method,url: `https://full-crm-two.vercel.app//auth/${url}`
   });
   dispatch(getallstore(Allusers.data))
 }
 
 export const UserTask = async(url,method,data)=>{
   let Tasks = await axios({
-    method:method,url: `http://localhost:5050/${url}`,data: data
+    method:method,url: `https://full-crm-two.vercel.app//${url}`,data: data
   }).then((res)=>console.log(res.data))
 }
 
 export const GetUserTask =async(url,method,data,dispatch)=>{
  await axios({
-    method:method,url: `http://localhost:5050/${url}?email=${data}`
+    method:method,url: `https://full-crm-two.vercel.app//${url}?email=${data}`
   }).then((res)=>dispatch(getTask(res.data)))
 }
 
@@ -47,7 +47,7 @@ export const GetUserTask =async(url,method,data,dispatch)=>{
 export const UpdateUserTask =async(url,method,data,dispatch)=>{
   console.log(data,"fromtendupdate");
   await axios({
-     method:method,url: `http://localhost:5050/${url}`,data:data
+     method:method,url: `https://full-crm-two.vercel.app//${url}`,data:data
    }).then((res)=>{
     console.log(res,"updated")
     dispatch(updateTask(res.data))
@@ -58,6 +58,6 @@ export const UpdateUserTask =async(url,method,data,dispatch)=>{
 export const DeleteTask = async(url,method,data)=>{
   console.log(url,method,data);
   await axios({
-    method:method,url: `http://localhost:5050/${url}?email=${data}`
+    method:method,url: `https://full-crm-two.vercel.app//${url}?email=${data}`
   }).then((res)=>console.log(res.data))
 }
