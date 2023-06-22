@@ -7,7 +7,7 @@ import dotenv from 'dotenv'
 
 const app =express();
 app.use(express.json());
-dotenv.config({ silent: process.env.NODE_ENV === 'production' });
+
 app.use(cors())
 app.use('/',task);
 app.use('/auth',auth)
