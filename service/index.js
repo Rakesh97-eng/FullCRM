@@ -12,7 +12,7 @@ app.use(cors())
 app.use('/',task);
 app.use('/auth',auth)
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb+srv://rakeshraj2097:Rakesh2097@reactdev.pct0kxk.mongodb.net/")
 
 app.listen('5050',()=>{
     console.log("Server Started");
