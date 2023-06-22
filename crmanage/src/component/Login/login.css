@@ -1,0 +1,33 @@
+.tasklogin{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    margin-top: 10%;
+}
+
+.tasklogin>input{
+    width: 20%;
+    height: 25px;
+    border-top: 0;
+    border-left:0 ;
+    border-right:0;
+}
+
+.loginbutton{
+    background-color: rgb(138, 112, 163);
+    border: none;
+    width: 10%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.hide{
+    position: absolute;
+    bottom: 75px;
+    border: none;
+    right: 40%;
+   
+}

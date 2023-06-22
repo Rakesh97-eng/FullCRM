@@ -1,0 +1,13 @@
+.dash_container{
+    margin: 15px;
+    background-color: rgb(209, 228, 228);
+}
+
+.dash_user_btn{
+    border: none;
+    height: 40px;
+    background-color: rgb(169, 199, 199);
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+}

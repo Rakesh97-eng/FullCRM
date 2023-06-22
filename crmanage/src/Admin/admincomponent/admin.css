@@ -1,0 +1,51 @@
+#producttable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7cadf7;
+    color: white;
+    margin: 5%;
+  }
+
+  #producttable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #producttable td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #tablebutton {
+    border: none;
+    text-decoration: none;
+
+    background-color: rgba(255, 251, 246, 0);
+  }
+
+  #tablebutton:hover{
+  cursor: pointer;
+   
+  }
+  
+  #producttable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #producttable tr:hover {background-color: #ddd;}
+
+  .productimage{
+    transition: transform .2s;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  .productimage:hover{
+    transform: scale(1.5); 
+  }
+
+  .childddd:nth-child(even){
+    color: yellowgreen;
+
+  }
