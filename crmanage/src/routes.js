@@ -32,5 +32,10 @@ export const routes = [
         path:'/register',
         component:Register,
         role:["ADMIN"]
+    },
+    {
+        path:'*',
+        component:NotFound,
+        role:["ADMIN","USER"]
     }
 ]
